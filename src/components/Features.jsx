@@ -30,7 +30,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="bg-[#F8FAFC] py-20 border border-t border-[#E2E8F0] font-['Poppins']">
+    <section className="bg-linear-to-b from-white to-[#F8FAFC] py-20 border border-t border-[#E2E8F0] font-['Poppins']">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-[166px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-centers ">
 

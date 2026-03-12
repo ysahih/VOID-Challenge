@@ -51,7 +51,7 @@ const cards = [
 
 const Backoffice = () => {
   return (
-    <section className="bg-[#F8FAFC] py-20 border-t border-[#E2E8F0] font-['Poppins']">
+    <section className="bg-gradient-to-b from-white to-[#F8FAFC] py-20 border-t border-[#E2E8F0] font-['Poppins']">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
 
         {/* Section Header */}

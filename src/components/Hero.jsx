@@ -5,7 +5,7 @@ import { LuQrCode } from 'react-icons/lu';
 
 const Hero = () => {
   return (
-    <section className="bg-white pt-16 md:pt-20 lg:pt-28 pb-16 lg:pb-24 overflow-hidden font-['Poppins']">
+    <section className="bg-gradient-to-b from-white to-[#F8FAFC] pt-20 md:pt-20 lg:pt-28 pb-16 lg:pb-24 overflow-hidden font-['Poppins']">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1.5fr] gap-8 items-center">
 
