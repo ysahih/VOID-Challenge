@@ -4,6 +4,9 @@ import Features from './components/Features'
 import Steps from './components/Steps'
 import GreenBanner from './components/GreenBanner'
 import Backoffice from './components/Backoffice'
+import StatsBar from './components/StatsBar'
+import Pricing from './components/Pricing'
+import Catalogue from './components/Catalogue'
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
       <Steps />
       <GreenBanner />
       <Backoffice />
+      <StatsBar />
+      <Pricing />
+      <Catalogue />
     </div>
   )
 }
