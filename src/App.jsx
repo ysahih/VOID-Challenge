@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import Steps from './components/Steps'
 import GreenBanner from './components/GreenBanner'
+import Backoffice from './components/Backoffice'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Features />
       <Steps />
       <GreenBanner />
+      <Backoffice />
     </div>
   )
 }
