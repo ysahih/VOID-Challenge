@@ -6,10 +6,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Nos offres', href: '#' },
-    { name: 'Nos jeux', href: '#' },
-    { name: 'Album 2025', href: '#' },
-    { name: 'À propos', href: '#' },
+    { name: 'Nos offres', href: '#offres' },
+    { name: 'Nos jeux', href: '#jeux' },
+    { name: 'Album 2025', href: '#jeux' },
+    { name: 'À propos', href: '#apropos' },
   ];
 
   return (

@@ -92,7 +92,7 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <section className="bg-white py-[74px] border-[#E2E8F0] font-['Poppins']">
+    <section id="offres" className="bg-white py-[74px] border-[#E2E8F0] font-['Poppins']">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
 
         {/* Header */}

@@ -33,7 +33,7 @@ const games = [
 
 const Catalogue = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-[#F8FAFC] py-20 font-['Poppins']">
+    <section id="jeux" className="bg-gradient-to-b from-white to-[#F8FAFC] py-20 font-['Poppins']">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
 
         {/* Header */}
