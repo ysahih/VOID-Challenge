@@ -9,6 +9,7 @@ import Pricing from './components/Pricing'
 import Catalogue from './components/Catalogue'
 import BottomStats from './components/BottomStats'
 import RedCTA from './components/RedCTA'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Catalogue />
       <BottomStats />
       <RedCTA />
+      <Footer />
     </div>
   )
 }
