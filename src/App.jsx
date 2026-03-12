@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Features from './components/Features'
+import Steps from './components/Steps'
+import GreenBanner from './components/GreenBanner'
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <Steps />
+      <GreenBanner />
     </div>
   )
 }

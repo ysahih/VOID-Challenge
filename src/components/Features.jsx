@@ -35,7 +35,7 @@ const Features = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-centers ">
 
           {/* ── Left: Image ── */}
-          <div className="w-full h-full min-h-[480px] max-h-[597px] max-w-[448px] rounded-2xl overflow-hidden ">
+          <div className="shadow-2xl w-full h-full min-h-[480px] max-h-[597px] max-w-[448px] rounded-2xl overflow-hidden ">
             <img
               src="/football.png"
               alt="Football player standing on ball"

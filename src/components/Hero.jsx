@@ -1,6 +1,5 @@
 import React from 'react';
 import { ChevronRight, Gift, Scan, Repeat, User } from 'lucide-react';
-import { FaQrcode } from 'react-icons/fa';
 import { HiOutlineGift, HiOutlineLightBulb } from 'react-icons/hi';
 import { LuQrCode } from 'react-icons/lu';
 
