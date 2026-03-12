@@ -7,6 +7,8 @@ import Backoffice from './components/Backoffice'
 import StatsBar from './components/StatsBar'
 import Pricing from './components/Pricing'
 import Catalogue from './components/Catalogue'
+import BottomStats from './components/BottomStats'
+import RedCTA from './components/RedCTA'
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <StatsBar />
       <Pricing />
       <Catalogue />
+      <BottomStats />
+      <RedCTA />
     </div>
   )
 }
