@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+  /* Brand Colors */
+  --color-primary-green: #0B6B3A;
+  --color-accent-green: #16A34A;
+  --color-logo-you: #DC2626;
+  --color-logo-win: #B01219;
+  --color-brand-dark: #1F2937;
+  --color-badge-bg: #DCFCE7;
+  --color-nav-text: #374151;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-900;
+    font-family: var(--font-sans);
+  }
+}
