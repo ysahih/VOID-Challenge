@@ -9,10 +9,10 @@ const Footer = () => {
     <footer className="bg-[#F8FAFC] border-t border-[#E2E8F0] font-sans">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
 
-          {/* Column 1 — Brand (half width = 2 of 4 cols) */}
-          <div className="col-span-2 flex flex-col gap-2">
+          {/* Column 1 — Brand (full width on mobile, half on desktop) */}
+          <div className="md:col-span-2 flex flex-col gap-2">
             {/* Logo — same as Navbar but slightly smaller */}
             <div className="flex items-center gap-2 cursor-pointer">
               <div className="bg-gradient-to-br from-[#16A34A] to-[#0B6B3A] w-8 h-8 rounded-[10px] flex items-center justify-center shadow-md shadow-primary-green/20">
@@ -105,7 +105,7 @@ const Footer = () => {
 
         {/* Bottom Bar — constrained to max-w-7xl, not full page */}
         <div className="border-t border-[#E2E8F0] mt-8">
-          <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
             <p className="text-[#475569] text-sm">
               © 2025 Youcanwin. Tous droits réservés.
             </p>

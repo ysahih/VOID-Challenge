@@ -10,8 +10,8 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1.5fr] gap-8 items-center">
 
           {/* ── LEFT COLUMN — untouched ── */}
-          <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-[#0F172A] mb-8">
+          <div className="max-w-2xl w-full">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-[#0F172A] mb-8">
               Transformez chaque{' '}
               <span className="relative inline-block bg-gradient-to-r from-[#16A34A] to-[#0B6B3A] bg-clip-text text-transparent pr-2">
                 produit
@@ -22,12 +22,12 @@ const Hero = () => {
               en expérience de jeu
             </h1>
 
-            <p className="text-[#475569] text-[24px] leading-[1.3] mb-8 max-w-xl">
+            <p className="text-[#475569] text-lg md:text-[24px] leading-[1.3] mb-8 max-w-xl">
               YouCanWin connecte vos marques aux fans de football à travers des mécaniques de gamification innovantes.{' '}
               <span className="font-semibold text-[#0F172A]">Codes QR, cartes digitales, défis et récompenses.</span>
             </p>
 
-            <div className="flex flex-wrap gap-20 mb-12">
+            <div className="flex flex-wrap gap-8 md:gap-20 mb-12">
               <div>
                 <div className="text-4xl font-bold text-primary-green mb-1">500K+</div>
                 <div className="text-[#475569] font-medium text-sm text-nowrap">Interactions/mois</div>
@@ -65,10 +65,38 @@ const Hero = () => {
           </div>
 
           {/* ── RIGHT COLUMN — Phone Mockup ── */}
-          <div className="relative flex justify-center lg:justify-start overflow-visible">
+          <div className="flex flex-col items-center gap-4 lg:block lg:relative lg:flex-none mt-8 lg:mt-0">
 
-            {/* Phone shell — fixed 448px wide, relative so absolute children are contained */}
-            <div className="relative flex-shrink-0" style={{ width: 448, height: 796 }}>
+            {/* Floating cards row — visible ONLY on mobile/tablet, hidden on desktop */}
+            <div className="flex lg:hidden gap-3 w-full max-w-[320px] sm:max-w-[380px]">
+              {/* QR Card */}
+              <div className="flex-1 bg-white rounded-2xl flex items-center gap-2 px-3 py-2.5"
+                style={{ boxShadow: '0 8px 24px -4px rgba(0,0,0,0.10)', border: '1px solid #F1F5F9' }}
+              >
+                <div className="w-8 h-8 rounded-lg bg-[#DCFCE7] flex items-center justify-center shrink-0">
+                  <LuQrCode className="w-4 h-4 text-[#16A34A]" />
+                </div>
+                <div>
+                  <p className="text-[13px] font-semibold text-[#0F172A] leading-tight">Scan QR Code</p>
+                  <p className="text-[11px] text-[#64748B]">Débloquer une carte</p>
+                </div>
+              </div>
+              {/* Récompense Card */}
+              <div className="flex-1 bg-white rounded-2xl flex items-center gap-2 px-3 py-2.5"
+                style={{ boxShadow: '0 8px 24px -4px rgba(0,0,0,0.08)', border: '1px solid #F1F5F9' }}
+              >
+                <div className="w-8 h-8 rounded-lg bg-[#FEE2E2] flex items-center justify-center shrink-0">
+                  <HiOutlineGift className="w-4 h-4 text-[#DC2626]" />
+                </div>
+                <div>
+                  <p className="text-[13px] font-semibold text-[#0F172A] leading-tight">Récompense</p>
+                  <p className="text-[11px] text-[#64748B]">Tirage hebdomadaire</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Responsive phone wrapper */}
+            <div className="relative w-full max-w-[320px] sm:max-w-[380px] lg:max-w-none lg:w-[448px]" style={{ aspectRatio: '448/796' }}>
 
               {/* Dark navy outer frame */}
               <div
@@ -120,74 +148,67 @@ const Hero = () => {
 
                 {/* Bottom nav bar */}
                 <div className="bg-white border-t border-slate-100 flex-shrink-0 px-4 pt-2 pb-4 flex items-center justify-around">
-                  {/* Active: Récompense (red) */}
                   <div className="flex flex-col items-center gap-1">
-                    <div className="w-4 h-4 rounded bg-red-100 flex items-center justify-center">
-                    </div>
+                    <div className="w-4 h-4 rounded bg-red-100 flex items-center justify-center"></div>
                     <span className="text-[10px] text-[#475569]">Récompense</span>
                   </div>
-                  {/* Inactive: Scanner */}
                   <div className="flex flex-col items-center gap-1">
-                    <div className="w-4 h-4 rounded bg-slate-200 flex items-center justify-center">
-                    </div>
+                    <div className="w-4 h-4 rounded bg-slate-200 flex items-center justify-center"></div>
                     <span className="text-[10px] text-[#475569]">Scanner</span>
                   </div>
-                  {/* Inactive: Échanges */}
                   <div className="flex flex-col items-center gap-1">
-                    <div className="w-4 h-4 rounded bg-slate-200 flex items-center justify-center">
-                    </div>
+                    <div className="w-4 h-4 rounded bg-slate-200 flex items-center justify-center"></div>
                     <span className="text-[10px] text-[#475569]">Échanges</span>
                   </div>
-                  {/* Inactive: Profil */}
                   <div className="flex flex-col items-center gap-1">
-                    <div className="w-4 h-4 rounded bg-slate-200 flex items-center justify-center">
-                    </div>
+                    <div className="w-4 h-4 rounded bg-slate-200 flex items-center justify-center"></div>
                     <span className="text-[10px] text-[#475569]">Profil</span>
                   </div>
                 </div>
 
               </div>{/* end inner screen */}
-            </div>{/* end phone shell */}
 
-            {/* Floating QR card — top-right overlapping */}
-            <div
-              className="absolute bg-white rounded-2xl flex items-center gap-3 z-20"
-              style={{
-                top: -20,
-                right: -10,
-                padding: '16px 20px 16px 16px',
-                boxShadow: '0 16px 48px -8px rgba(0,0,0,0.13)',
-                border: '1px solid #F1F5F9',
-              }}
-            >
-              <div className="w-10 h-10 rounded-lg bg-[#DCFCE7] flex items-center justify-center flex-shrink-0">
-                <LuQrCode className="w-5 h-5 text-[#16A34A]" />
+              {/* Floating QR card — desktop only */}
+              <div
+                className="hidden lg:flex absolute bg-white rounded-2xl items-center gap-3 z-20"
+                style={{
+                  top: -20,
+                  right: -10,
+                  padding: '16px 20px 16px 16px',
+                  boxShadow: '0 16px 48px -8px rgba(0,0,0,0.13)',
+                  border: '1px solid #F1F5F9',
+                }}
+              >
+                <div className="w-10 h-10 rounded-lg bg-[#DCFCE7] flex items-center justify-center flex-shrink-0">
+                  <LuQrCode className="w-5 h-5 text-[#16A34A]" />
+                </div>
+                <div>
+                  <p className="text-[14px] font-semibold text-[#0F172A] leading-tight">Scan QR Code</p>
+                  <p className="text-[12px] text-[#64748B] font-normal mt-0.5">Débloquer une carte</p>
+                </div>
               </div>
-              <div>
-                <p className="text-[14px] font-semibold text-[#0F172A] leading-tight">Scan QR Code</p>
-                <p className="text-[12px] text-[#64748B] font-normal mt-0.5">Débloquer une carte</p>
-              </div>
-            </div>
 
-            {/* Floating Récompense card — bottom-left overlapping */}
-            <div
-              className="absolute bg-white rounded-2xl flex items-center gap-3 z-20"
-              style={{
-                bottom: -20,
-                left: -84,
-                padding: '16px 24px 16px 16px',
-                boxShadow: '0 16px 48px -8px rgba(0,0,0,0.11)',
-                border: '1px solid #F1F5F9',
-              }}
-            >
-              <div className="w-10 h-10 rounded-lg bg-[#FEE2E2] flex items-center justify-center flex-shrink-0">
-                <HiOutlineGift className="w-5 h-5 text-[#DC2626]" />
+              {/* Floating Récompense card — desktop only */}
+              <div
+                className="hidden lg:flex absolute bg-white rounded-2xl items-center gap-3 z-20"
+                style={{
+                  bottom: -20,
+                  left: -84,
+                  padding: '16px 24px 16px 16px',
+                  boxShadow: '0 16px 48px -8px rgba(0,0,0,0.11)',
+                  border: '1px solid #F1F5F9',
+                }}
+              >
+                <div className="w-10 h-10 rounded-lg bg-[#FEE2E2] flex items-center justify-center flex-shrink-0">
+                  <HiOutlineGift className="w-5 h-5 text-[#DC2626]" />
+                </div>
+                <div>
+                  <p className="text-[14px] font-semibold text-[#0F172A] leading-tight">Récompense</p>
+                  <p className="text-[12px] text-[#64748B] font-normal mt-0.5">Tirage hebdomadaire</p>
+                </div>
               </div>
-              <div>
-                <p className="text-[14px] font-semibold text-[#0F172A] leading-tight">Récompense</p>
-                <p className="text-[12px] text-[#64748B] font-normal mt-0.5">Tirage hebdomadaire</p>
-              </div>
-            </div>
+
+            </div>{/* end phone wrapper */}
 
           </div>{/* end right column */}
 

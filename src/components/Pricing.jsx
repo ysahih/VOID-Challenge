@@ -124,7 +124,7 @@ const Pricing = () => {
 
               {/* Card */}
               <div
-                className={`bg-white rounded-[16px] border p-8 flex flex-col gap-4 h-[706px] hover:shadow-lg transition-all duration-300 ${plan.popular ? 'shadow-xl' : ''}`}
+                className={`bg-white rounded-[16px] border p-8 flex flex-col gap-4 lg:min-h-[706px] hover:shadow-lg transition-all duration-300 ${plan.popular ? 'shadow-xl' : ''}`}
                 style={{ borderColor: plan.border}}
               >
                 {/* Icon */}
@@ -152,7 +152,6 @@ const Pricing = () => {
                   ))}
                 </ul>
 
-                {/* CTA */}
                 <div className="">
                   {plan.btn.style === 'red' ? (
                     <button className="cursor-pointer w-full bg-[#DC2626] hover:bg-[#B01219] text-white font-medium text-[16px] py-2.5 rounded-[8px] transition-colors duration-200 flex items-center justify-center gap-2">

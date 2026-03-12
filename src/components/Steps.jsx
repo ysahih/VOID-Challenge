@@ -74,7 +74,7 @@ const Steps = () => {
                 </div>
                 {/* Step number badge */}
                 <div
-                  className="absolute  w-7 h-7 rounded-full flex items-center justify-center text-white text-[12px] font-bold -top-2 -right-22"
+                  className="absolute w-7 h-7 rounded-full flex items-center justify-center text-white text-[12px] font-bold -top-2 -right-3 lg:-right-22"
                   style={{ background: step.red ? '#DC2626' : '#16A34A' }}
                 >
                   {step.number}
